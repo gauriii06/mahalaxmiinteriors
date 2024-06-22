@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 70px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(47, 46, 46);
+    display: block;
+    margin: auto;
+    transition: .5s;    
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 20px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px; 
+    padding: 0; 
+}
+.header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.content-image{
+    flex-basis: 100%;
+}
+.about-col img{
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.row1{
+    width:auto;
+    height: auto;
+    margin-left: 40px;
+}
+.row2{
+    width:auto;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.row3{
+    width:auto;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.row4{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.row5{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.row6{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.row7{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+}
+@media(max-width: 700px) {
+    nav img{
+        width: 40px;
+    }
+    .header {
+        height: 30vh; /* Reduced height for phone screens */
+        padding-top: 20px; /* Add padding to the top for better alignment */
+        background-position: top; /* Adjust background position to top for better visibility */
+    }
+    .header h1 {
+        font-size: 24px; /* Adjust font size for better readability on phones */
+    }
+   .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        background: rgb(47, 46, 46);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer; 
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .row1 {
+        width: calc(100% - 80px); /* Adjusted width to leave 40px margin on each side */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 18px;
+        padding: 0; /* Reset padding */
+    }
+
+    .row1 img {
+        width: 100%; /* Ensure the image spans the full width of .row1 */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any residual inline block spacing */
+        margin: 0 auto; /* Center the image horizontally within .row1 */
+        max-width: none; /* Reset max-width */
+    }
+    .row2 {
+        width: calc(100% - 80px); /* Adjusted width to leave 40px margin on each side */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 18px; 
+        padding: 0; /* Reset padding */
+    }
+
+    .row2 img {
+        width: 100%; /* Ensure the image spans the full width of .row1 */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any residual inline block spacing */
+        margin: 0 auto; /* Center the image horizontally within .row1 */
+        max-width: none; /* Reset max-width */
+    }
+    .row3 {
+        width: calc(100% - 80px); /* Adjusted width to leave 40px margin on each side */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 18px; /* Adjusted top margin to maintain spacing */
+        margin-left: auto; /* Center .row2 horizontally */
+        margin-right: auto; /* Center .row2 horizontally */
+        padding: 0; /* Reset padding */
+    }
+
+    .row3 img {
+        width: 100%; /* Ensure the image spans the full width of .row2 */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any residual inline block spacing */
+        margin: 0 auto; /* Center the image horizontally within .row2 */
+        max-width: none; /* Reset max-width */
+    }
+    .row4 {
+        margin-left: 40px; /* Increased left margin */
+        margin-right: 40px; /* Increased right margin */
+        padding: 0;
+        margin-top: 18px; /* Reset padding */
+    }
+
+    .row4 img {
+        max-width: 100%; /* Ensure the image spans the full width of .row3 */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any residual inline block spacing */
+        margin: 0 auto; /* Center the image horizontally within .row3 */
+    }
+    .row5 {
+        margin-top: 18px; /* Increased top margin */
+        margin-left: 40px; /* Increased left margin */
+        margin-right: 40px; /* Increased right margin */
+        padding: 0; /* Reset padding */
+    }
+
+    .row5 img {
+        max-width: 100%; /* Ensure the image spans the full width of .row3 */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any residual inline block spacing */
+        margin: 0 auto; /* Center the image horizontally within .row3 */
+    }
+    .row6 {
+        margin-top: 18px; /* Increased top margin */
+        margin-left: 40px; /* Increased left margin */
+        margin-right: 40px; /* Increased right margin */
+        padding: 0; /* Reset padding */
+    }
+
+    .row6 img {
+        max-width: 100%; /* Ensure the image spans the full width of .row3 */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any residual inline block spacing */
+        margin: 0 auto; /* Center the image horizontally within .row3 */
+    }
+    .row7 {
+        margin-top: 18px; /* Increased top margin */
+        margin-left: 40px; /* Increased left margin */
+        margin-right: 40px; /* Increased right margin */
+        padding: 0; /* Reset padding */
+    }
+
+    .row7 img {
+        max-width: 100%; /* Ensure the image spans the full width of .row3 */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any residual inline block spacing */
+        margin: 0 auto; /* Center the image horizontally within .row3 */
+    }
+}
+

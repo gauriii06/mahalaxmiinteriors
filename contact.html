@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahalaxmi Interiors</title>
+<link rel="stylesheet" href="style2.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>CONTACT US </h1>
+    </section>
+ 
+
+    <section class="course">
+        <p><b>Contractor:</b> <span>Mahavir Prasad Prajapati</span></p>
+        <p><b>Phone:</b> <span>+91 9870728015</span></p>
+        <p><b>Email:</b> <span>mahalaxmiinterior002@gmail.com</span></p>
+        <p><b>Address:</b> <span>105, Mahesh Mega Building No 3, Jivdani Krupa Complex, Chandansar Road, Virar, Maharashtra, 401305</span></p>
+        <p><b>GST Number:</b> <span>27A0DPP7740K1Z1</span></p>
+    </section>
+    
+    
+
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    
